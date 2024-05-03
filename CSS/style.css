@@ -416,4 +416,76 @@ footer {
         margin: 0rem;
         font-size: 1rem;
         }
-    }            
+    }
+    @media (min-width: 1024px) {
+        h1 {
+            font-size: 2rem;
+            }
+        img {
+            width: 100%;
+            }
+        .descripcion-pagina {
+            font-size: 1.75rem;
+            text-align: center;             
+                }
+        #menu-index-principal {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            }
+        #seccion-servicios {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-content: center;
+            flex-wrap: wrap;
+            }
+        .servicios {
+            width: 30rem;
+            height: 35rem;
+            }
+        .servicios p {
+            font-size: 1.5rem;
+            }
+        #datos.clientes {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-content: center;
+            flex-wrap: wrap;
+            }
+        .datos-clientes {
+            width: 30rem;
+            height: 35rem;
+            }
+        .datos-clientes li {
+            font-size: 1.5rem;
+            }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+            }
+        fieldset {
+            width: 35rem;
+            font-size: 1rem;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+            }
+        input {
+            margin: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            }
+        select {
+            padding: 0;
+            margin: 0rem;
+            font-size: 1rem;
+            }
+        }            
