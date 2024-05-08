@@ -415,10 +415,10 @@ footer p {
     .datos-clientes li {
         font-size: 1.5rem;
         }
-    #menu-contacto div{
+    .menu-contacto div{
         height: 50%;
     }
-    #menu-contacto div img {
+    .menu-contacto div img {
         display: none;
     }
     form {
