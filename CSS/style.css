@@ -39,7 +39,7 @@ nav {
     text-align: center;
 }
 h1 {
-    margin: 7.5%;
+    /* margin: 7.5%; */
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -198,27 +198,66 @@ select {
     margin: 1rem;
     font-size: 2rem;
 }
-/* .banner {
-    grid-area: banner;
-    font-size: 5rem;
-    height: 6rem;
-    color: aliceblue;
-    background-color: #0F0140;
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 55% 20%;
+    grid-template-rows: repeat (5, 30rem);
+    grid-template-areas:
+    "entradas articulo tematica"
+    "entradas publicidad publicidad "
+    "entradas entrada2103 calendario"
+    "entradas publicidad1 publicidad1"
+    "entradas entrada1403 links"
+    ;
+    column-gap: 2%;
+    row-gap: 2%;
+    }
+.grid-navbar {
+    grid-area: entradas;
 }
-.layout nav {
-    width: auto;
-    grid-area: nav;
-    border-style: double;
+.grid-article {
+    grid-area: articulo;
 }
-.layout nav h2 {
-    text-align: center;
+.grid-entradas-tematica {
+    grid-area: tematica;
 }
-.layout nav ul {
+.grid-publicidad {
+    grid-area: publicidad;
+}
+#entrada-21-de-marzo {
+    grid-area:entrada2103
+}
+.grid-calendario {
+    grid-area: calendario;
+}
+.grid-publicidad1 {
+    grid-area:publicidad1
+}
+#entrada-14-de-marzo {
+    grid-area: entrada1403
+}
+.grid-links {
+    grid-area: links;
+}
+.grid-navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: double;
+    padding: 1%;
+    margin-left:1%;
 }
-.layout nav li {
+.grid-navbar ul {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    list-style-type: none;
+    color: #0D0159;
+    padding: 1%;
+}
+.grid-navbar li {
     list-style: none;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 600;
@@ -227,45 +266,39 @@ select {
     list-style-type: none;
     padding-bottom: 1rem;
     color: #0D0159;
-}
-.layout nav li a {
     text-decoration: none;
-}
-.layout article {
-    grid-area: article;
-    background-color: yellow;
-}
-.layout .entrada-21-de-marzo{
-    grid-area: article2103;
-    background-color: orange;
-}
-.layout .entrada-14-de-marzo{
-    grid-area: article1403;
-    background-color: magenta;
-}
-.layout aside {
-    grid-area: publicidad;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 10rem;
-    background-color: green;
+    align-items: center
 }
-.layout {
+.grid-article {
+    background-color: yellow;
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding-bottom: 1rem;
+    color: #0D0159;
+    text-decoration: none;
+}
+.grid-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-article span {
+    display: inline;
+}
+.grid-article div {
+    width: 90%;
+    }
+aside {
+    grid-area: publicidad;
     display: grid;
-    grid-template-columns: (1fr, 3fr, 1fr);
-    grid-template-rows: (6 repeat);
-    grid-template-areas:
-        "nav banner publicidad"
-        "nav article publicidad"
-        "nav . ."
-        "nav article2103 article2103"
-        "nav . ."
-        "nav article1403 article1403";
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    padding-bottom: 10rem;
-} */
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    padding: 1%;
+    margin-left:1%
+}
 footer {
     height: 200px;
     background-color: #403001;
@@ -441,111 +474,3 @@ footer p {
         display: none;
     }
     }
-@media (min-width: 1023) {
-    .navbar {
-        border-style: dashed;
-    }
-}
-        /* h1 {
-            font-size: 2rem;
-            }
-        img {
-            width: 100%;
-        }
-        .descripcion-pagina {
-            font-size: 1.75rem;
-            text-align: center;
-        }
-        #menu-index-principal {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .menu-index {
-            width: 30rem;
-            height: 30rem;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #seccion-servicios {
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-content: center;
-        }
-        .servicios {
-            width: 30rem;
-            height: 35rem;
-        }
-        .servicios p {
-            font-size: 1.5rem;
-        }
-        #datos.clientes {
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-content: center;
-            }
-        .datos-clientes {
-            width: 30rem;
-            height: 35rem;
-            }
-        .datos-clientes li {
-            font-size: 1.5rem;
-            }
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center
-        }
-        fieldset {
-            width: 35rem;
-            font-size: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center
-            }
-        input {
-            margin: 1rem;
-            font-size: 1rem;
-            text-align: center;
-            }
-        select {
-            padding: 0;
-            margin: 0rem;
-            font-size: 1rem;
-            }
-        footer {
-            display: grid;
-            grid-template-columns: 1;
-            grid-template-rows: 3;
-        }
-        .ubicacion {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .derechos-propiedad p {
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        .iconos-rrss {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-        .iconos-rrss div span {
-            display: none;
-        }
-        }
-     */
