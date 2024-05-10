@@ -68,6 +68,7 @@ img {
     width: 23%;
     height: auto;
     background-color:#F2E30F;
+    border-style: double;
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -105,6 +106,7 @@ button {
     width: 40rem;
     height: 45rem;
     background-color:#F2E30F;
+    border-style: double;
     padding: 10px;
     margin: 10px;
 }
@@ -132,7 +134,7 @@ button {
     width: 40rem;
     height: 45rem;
     background-color:#F2E30F;
-    border-style: dotted;
+    border-style: double;
     border-color: #0F0140;
     padding: 10px;
     margin: 10px;
@@ -162,6 +164,7 @@ button {
     align-items: center;
     width: 45%;
     background-color:#F2E30F;
+    border-style: double;
     border-style: dotted;
     padding: 3%;
 }
@@ -299,6 +302,7 @@ form select {
 }
 .grid-article {
     background-color: yellow;
+    border-style: double;
     font-size: 1.5rem;
     list-style-type: none;
     padding-bottom: 1rem;
@@ -493,20 +497,6 @@ footer {
     }
     }
 @media (min-width: 768px) and (max-width: 1023px) {
-    .navbar-toggler {
-        background-color:#0D0159;
-        width: 5.5rem;
-        height: 5.5rem;
-        margin-bottom: 20%;
-    }
-    .navbar-collapse {
-        background-color: #F2E30F
-    }
-    .navbar-toggler-icon {
-        width: 95%;
-        height: 90%;
-        background-color: #F2E30F;
-    }
     h1 {
         font-size: 2rem;
         margin: 5%;
