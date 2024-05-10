@@ -17,12 +17,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
 }
-.logo {
+#logo {
     height: 6rem;
     width: 6rem;
     margin-top: 30%;
     border-style: double;
-}
+    border-color: #0F0140;
+}   
 nav {
     display: flex;
     flex-direction: row;
@@ -39,7 +40,6 @@ nav {
     text-align: center;
 }
 h1 {
-    /* margin: 7.5%; */
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -59,19 +59,20 @@ img {
     color: #0D0159;
     }
 #menu-index-principal {
-    padding-top: 7.5%;
-    padding-bottom: 7.5;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 .menu-index {
-    width: 50rem;
-    height: 45rem;
+    width: 23%;
+    height: auto;
     background-color:#F2E30F;
     padding: 1rem;
     margin: 1rem;
-    display: inline
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .menu-index p {
     font-family: "Bebas Neue", sans-serif;
@@ -81,9 +82,15 @@ img {
     text-align: center;
     color: #0D0159;
 }
+.menu-index p a{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
 button {
-    margin-top: 1rem;
-    border-color: aqua;
+    width: 30%;
     padding: 1rem;
     background-color:#0D0159;
     color:#F2E30F;
@@ -100,8 +107,6 @@ button {
     background-color:#F2E30F;
     padding: 10px;
     margin: 10px;
-    display: inline-block;
-    flex-wrap: wrap;
 }
 .servicios p {
     font-family: "Bebas Neue", sans-serif;
@@ -110,6 +115,12 @@ button {
     font-size: 2rem;
     text-align: center;
     color: #0D0159
+}
+.servicios p a{
+    text-decoration: none;
+    color: #0D0159;
+    font-weight: 800;
+    display: block;
 }
 #datos-clientes {
     display: flex;
@@ -129,7 +140,7 @@ button {
 }
 .datos-clientes ul {
     margin-top: 10%;
-    }   
+}   
 .datos-clientes li {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -143,36 +154,45 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 .menu-contacto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    background-color:#F2E30F;
+    border-style: dotted;
+    padding: 3%;
+}
+.menu-contacto svg {
+    width: 30%;
+    height: 30%;
+}
+.menu-contacto p {
+    width: auto;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2rem;
-    text-align: center;
-}
-.menu-contacto div img {
-    padding-bottom: 5rem;
-}
-.opciones-contacto a {
-    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: start;
+    list-style-type: none;
     color: #0D0159
 }
-.opciones-contacto {
-    width: 40rem;
-    height: 50rem;
-    background-color:#F2E30F;
-    border-style: dotted;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
+.menu-contacto button {
+    width: 100%;
+    padding: 1rem;
+    background-color:#0D0159;
+    color:#F2E30F;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
 }
-fieldset {
-    border-style: dashed;
-    background-color: aqua;
-    padding: 25px;
-    margin: 10px;
+.formularios form fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 legend {
     text-align: center;
@@ -189,12 +209,12 @@ fieldset {
     list-style-type: none;
     color: #0D0159;
 }
-input {
+form input {
     margin: 0.5rem;
     font-size: 2rem;
     text-align: center;
 }
-select {
+form select {
     margin: 1rem;
     font-size: 2rem;
 }
@@ -247,6 +267,9 @@ select {
     border-style: double;
     padding: 1%;
     margin-left:1%;
+    }
+.grid-navbar h2 {
+    margin: 5% 0 5% 0
 }
 .grid-navbar ul {
     font-family: "Bebas Neue", sans-serif;
@@ -269,7 +292,10 @@ select {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+}
+.grid-navbar a {
+    text-decoration: none;
 }
 .grid-article {
     background-color: yellow;
@@ -282,14 +308,18 @@ select {
 .grid-article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .grid-article span {
     display: inline;
-}
+    }
 .grid-article div {
     width: 90%;
-    }
+}
+.grid-article p {
+    text-align: center
+}
 aside {
     grid-area: publicidad;
     display: grid;
@@ -306,7 +336,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-footer p {
+.derechos-propiedad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -359,6 +392,7 @@ footer p {
     }
     h1 {
         font-size: 2rem;
+        margin: 7.5%;
         }
     img {
         width: 100%;
@@ -366,6 +400,7 @@ footer p {
     .descripcion-pagina {
         font-size: 1.75rem;
         text-align: center;
+        margin: 7.5% 2% 7.5% 2%;
     }
     #menu-index-principal {
         display: flex;
@@ -374,25 +409,17 @@ footer p {
         align-items: center;
     }
     .menu-index {
-        width: 30rem;
-        height: 35rem;
+        width: 90%;
+        height: auto;
         padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10%;
-    }
-    #seccion-servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-content: center;
     }
     .servicios {
-        width: 30rem;
-        height: 35rem;
-        margin-bottom: 10%;
+        width: 90%;
+        height: auto;
     }
     .servicios p {
         padding-top: 10%;
@@ -415,36 +442,27 @@ footer p {
     .datos-clientes li {
         font-size: 1.5rem;
         }
-    .menu-contacto div{
-        height: 50%;
+    .menu-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .menu-contacto div img {
+    .menu-contacto div {
+        width: 90% !important;
+        height: 20rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+    .menu-contacto p {
         display: none;
     }
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
     fieldset {
-        width: 35rem;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-        }
+        font-size: 1rem;}
     input {
-        margin: 1rem;
-        font-size: 1rem;
-        text-align: center;
-        }
-    select {
-        padding: 0;
-        margin: 0rem;
-        font-size: 1rem;
-        }
+        width: 90%;
+    }       
     footer {
         margin-top: 0;
         width: 100%;
@@ -474,3 +492,94 @@ footer p {
         display: none;
     }
     }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-toggler {
+        background-color:#0D0159;
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-bottom: 20%;
+    }
+    .navbar-collapse {
+        background-color: #F2E30F
+    }
+    .navbar-toggler-icon {
+        width: 95%;
+        height: 90%;
+        background-color: #F2E30F;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 5%;
+    }
+    .descripcion-pagina {
+        font-size: 1.75rem;
+        text-align: center;
+        margin: 3% 1% 3% 1%;
+    }
+    button {
+        width: 70%;
+    }
+    .servicios p {
+        padding-top: 10%;
+        font-size: 1.5rem;
+    }
+    #datos.clientes {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+    }
+    .datos-clientes {
+        width: 30rem;
+        height: 35rem;
+        margin-bottom: 10%;
+    }
+    .datos-clientes ul {
+        margin-top: 10%;
+    }   
+    .datos-clientes li {
+        font-size: 1.5rem;
+    }
+    .menu-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu-contacto div {
+        width: 90%;
+        height: 25rem;
+        margin:0 2.5% 2.5% 2.5%;
+    }
+    .menu-contacto p {
+        display: none;
+    }
+    .menu-contacto a {
+        width: 100%;
+        text-align: center;
+    }
+    .derechos-propiedad p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}@media (min-width: 1024px) {
+    h1 {
+        margin: 3%;
+    }
+    #portada {
+        margin-bottom: 3%;
+    }
+    .descripcion-pagina {
+        text-align: justify;
+        margin: 0% 1% 3% 1%;
+    }
+}   
+.menu-contacto div {
+    width: 45%;
+    height: 47rem;
+    margin-bottom: 3%;
+}
+.grid-container {
+    margin-bottom: 5%;
+}
