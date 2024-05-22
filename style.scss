@@ -517,16 +517,47 @@ footer {
             "publicidad1"
             "entrada1403"
             ;
-            row-gap: 3%;
+            row-gap: 1%;
             }
             .grid-dropdown-entradas-antiguas {
                 grid-area: entradas;
-            }
+                button {
+                    width: 100%;
+                    padding: 1rem;
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 1.5rem;
+                    background-color:#F2E30F;
+                    color:#0D0159;
+                        }
+                    ul {
+                        width: 100%;
+                        background-color: #F2E30F;
+                        font-family: "Bebas Neue", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 2.5rem;
+                        list-style-type: none;
+                        color: #0D0159;
+                        padding: 1%;
+                            li {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                list-style-type: none;
+                                padding-bottom: 1rem;
+                            }
+                                a {
+                                    text-decoration: none;
+                                    color: #0D0159;
+                                    }
+                                }
+                            }    
             .grid-article {
                 grid-area: articulo;
             }
             .grid-dropdown-entradas-tematicas {
                 grid-area: tematica;
+                @extend .grid-dropdown-entradas-antiguas
             }
             .grid-publicidad {
                 grid-area: publicidad;
@@ -536,7 +567,11 @@ footer {
             }
             .grid-dropdown-calendario {
                 grid-area: calendario;
-            }
+                @extend .grid-dropdown-entradas-antiguas;
+                ul li {
+                        text-align: center;
+                    }
+                }
             .grid-publicidad1 {
                 grid-area:publicidad1
             }
@@ -545,6 +580,7 @@ footer {
             }
             .grid-dropdown-links {
                 grid-area: links;
+                @extend .grid-dropdown-entradas-antiguas;
             }
         footer {
             margin-top: 0;

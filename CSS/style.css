@@ -495,10 +495,40 @@ html footer .iconos-rrss div svg {
     grid-template-columns: 100%;
     grid-template-rows: repeat 9, 1fr;
     grid-template-areas: "entradas" "tematica " "calendario" "links" "articulo" "publicidad" "entrada2103" "publicidad1" "entrada1403";
-    row-gap: 3%;
+    row-gap: 1%;
   }
-  html .grid-dropdown-entradas-antiguas {
+  html .grid-dropdown-entradas-antiguas, html .grid-dropdown-links, html .grid-dropdown-calendario, html .grid-dropdown-entradas-tematicas {
     grid-area: entradas;
+  }
+  html .grid-dropdown-entradas-antiguas button, html .grid-dropdown-links button, html .grid-dropdown-calendario button, html .grid-dropdown-entradas-tematicas button {
+    width: 100%;
+    padding: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    background-color: #F2E30F;
+    color: #0D0159;
+  }
+  html .grid-dropdown-entradas-antiguas ul, html .grid-dropdown-links ul, html .grid-dropdown-calendario ul, html .grid-dropdown-entradas-tematicas ul {
+    width: 100%;
+    background-color: #F2E30F;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    list-style-type: none;
+    color: #0D0159;
+    padding: 1%;
+  }
+  html .grid-dropdown-entradas-antiguas ul li, html .grid-dropdown-links ul li, html .grid-dropdown-calendario ul li, html .grid-dropdown-entradas-tematicas ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 1rem;
+  }
+  html .grid-dropdown-entradas-antiguas ul a, html .grid-dropdown-links ul a, html .grid-dropdown-calendario ul a, html .grid-dropdown-entradas-tematicas ul a {
+    text-decoration: none;
+    color: #0D0159;
   }
   html .grid-article {
     grid-area: articulo;
@@ -514,6 +544,9 @@ html footer .iconos-rrss div svg {
   }
   html .grid-dropdown-calendario {
     grid-area: calendario;
+  }
+  html .grid-dropdown-calendario ul li {
+    text-align: center;
   }
   html .grid-publicidad1 {
     grid-area: publicidad1;
