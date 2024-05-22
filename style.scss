@@ -504,7 +504,7 @@ footer {
             }
         .grid-container {
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 1;
             grid-template-rows: repeat (5, 1fr);
             grid-template-areas:
             "articulo" 
@@ -515,23 +515,28 @@ footer {
             ;
             grid-template-rows: 0%;
         }
+        .grid-navbar .entradas-tematica .calendario .links {
+            display: none;
+        }
         .grid-article {
             grid-area: articulo;
+            width: 100%;
         }
         .grid-publicidad {
             grid-area: publicidad;
+            width: 100%;
         }
         #entrada-21-de-marzo {
-            grid-area:entrada2103
+            grid-area:entrada2103;
+            width: 100%;
         }
         .grid-publicidad1 {
-            grid-area:publicidad1
+            grid-area:publicidad1;
+            width: 100%;
         }
         #entrada-14-de-marzo {
-            grid-area: entrada1403
-        }
-        .grid-navbar .entradas-tematica .calendario .links{
-            display: none;
+            grid-area: entrada1403;
+            width: 100%;
         }
         footer {
             margin-top: 0;

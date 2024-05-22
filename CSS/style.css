@@ -493,28 +493,33 @@ html footer .iconos-rrss div svg {
   }
   html .grid-container {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1;
     grid-template-rows: repeat 5, 1fr;
     grid-template-areas: "articulo" "publicidad" "entrada2103" "publicidad1" "entrada1403";
     grid-template-rows: 0%;
   }
+  html .grid-navbar .entradas-tematica .calendario .links, html .grid-entradas-tematica .entradas-tematica .calendario .links, html .grid-calendario .entradas-tematica .calendario .links, html .grid-links .entradas-tematica .calendario .links {
+    display: none;
+  }
   html .grid-article {
     grid-area: articulo;
+    width: 100%;
   }
   html .grid-publicidad {
     grid-area: publicidad;
+    width: 100%;
   }
   html #entrada-21-de-marzo {
     grid-area: entrada2103;
+    width: 100%;
   }
   html .grid-publicidad1 {
     grid-area: publicidad1;
+    width: 100%;
   }
   html #entrada-14-de-marzo {
     grid-area: entrada1403;
-  }
-  html .grid-navbar, html .grid-entradas-tematica, html .grid-calendario, html .grid-links {
-    display: none;
+    width: 100%;
   }
   html footer {
     margin-top: 0;
