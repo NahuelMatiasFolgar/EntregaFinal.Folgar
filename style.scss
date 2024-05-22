@@ -244,123 +244,136 @@ html   {
                 font-style: normal;
                 font-size: 1.5rem;
                 }
-    .grid-container {
-        display: grid;
-        grid-template-columns: 20% 55% 20%;
-        grid-template-rows: repeat (5, 30rem);
-        grid-template-areas:
-        "entradas articulo tematica"
-        "entradas publicidad publicidad "
-        "entradas entrada2103 calendario"
-        "entradas publicidad1 publicidad1"
-        "entradas entrada1403 links";
-        column-gap: 2%;
-        row-gap: 2%;
-        }
-    .grid-navbar {
-        grid-area: entradas;
-        }
-    .grid-article {
-        grid-area: articulo;
-        }
-    .grid-entradas-tematica {
-        grid-area: tematica;
-        }
-        .grid-publicidad {
-        grid-area: publicidad;
-        }
-    #entrada-21-de-marzo {
-        grid-area:entrada2103
-        }
-    .grid-calendario {
-        grid-area: calendario;
-        }
-    .grid-publicidad1 {
-        grid-area:publicidad1
-        }
-    #entrada-14-de-marzo {
-        grid-area: entrada1403
-        }
-    .grid-links {
-        grid-area: links;
-        }
-    .grid-navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        border-style: double;
-        padding: 1%;
-        margin-left:1%;
-        h2 {
-            margin: 5% 0 5% 0
-        }
-        ul {
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.5rem;
-            list-style-type: none;
-            color: #0D0159;
-            padding: 1%;
+.grid-container {
+display: grid;
+grid-template-columns: 20% 55% 20%;
+grid-template-rows: repeat (5, 30rem);
+grid-template-areas:
+"entradas articulo tematica"
+"entradas publicidad publicidad "
+"entradas entrada2103 calendario"
+"entradas publicidad1 publicidad1"
+"entradas entrada1403 links"
+;
+column-gap: 2%;
+row-gap: 2%;
+}
+.grid-navbar {
+    grid-area: entradas;
+}
+.grid-article {
+    grid-area: articulo;
+}
+.grid-entradas-tematica {
+    grid-area: tematica;
+}
+.grid-publicidad {
+    grid-area: publicidad;
+}
+#entrada-21-de-marzo {
+    grid-area:entrada2103
+}
+.grid-calendario {
+    grid-area: calendario;
+}
+.grid-publicidad1 {
+    grid-area:publicidad1
+}
+#entrada-14-de-marzo {
+    grid-area: entrada1403
+}
+.grid-links {
+    grid-area: links;
+}
+.grid-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: double;
+    padding: 1%;
+    margin-left:1%;
+    h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    list-style-type: none;
+    color: #0D0159;
+    margin: 5% 0 5% 0;
+    }
+    ul {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    list-style-type: none;
+    color: #0D0159;
+    padding: 1%;
         li {
-            list-style: none;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 600;
-            font-style:normal;
-            font-size: 1.5rem;
             list-style-type: none;
             padding-bottom: 1rem;
-            color: #0D0159;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        a {
-            text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #0D0159;
+                }
+            }
         }
-    }
-        }
-    .grid-article {
-        background-color: yellow;
-        border-style: double;
-        font-size: 1.5rem;
-        list-style-type: none;
-        padding-bottom: 1rem;
-        color: #0D0159;
-        text-decoration: none;
-        }
-    .grid-article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.grid-article {
+    background-color: yellow;
+    border-style: double;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #0D0159;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
         span {
             display: inline;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            color: #0D0159;
             }
         div {
             width: 90%;
             }
         p {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            color: #0D0159;
+            text-decoration: none;
             text-align: center
-            }   
         }
-    aside {
-        grid-area: publicidad;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        border-style: double;
-        padding: 1%;
-        margin-left:1%
+    }
+.grid-entradas-tematica {
+    @extend .grid-navbar
+}
+aside {
+    grid-area: publicidad;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    padding: 1%;
+    margin-left:1%
         }
-    footer {
-        height: 200px;
-        background-color: #403001;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+.grid-calendario {
+    @extend .grid-navbar;
+    }
+.grid-links {
+    @extend .grid-navbar;
+    }
+footer {
+    height: 200px;
+    background-color: #403001;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
         .derechos-propiedad {
         display: flex;
         flex-direction: column;
@@ -576,7 +589,8 @@ html   {
             margin-bottom: 3%;
         }
         .grid-container {
-            margin-bottom: 5%;
+            margin-bottom: 10%;
+            row-gap: 2%;
         }
     }
 }
