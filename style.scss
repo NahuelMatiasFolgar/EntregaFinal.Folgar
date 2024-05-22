@@ -246,7 +246,7 @@ html   {
                 }
 .grid-container {
 display: grid;
-grid-template-columns: 20% 55% 20%;
+grid-template-columns: 20% 60% 20%;
 grid-template-rows: repeat (5, 30rem);
 grid-template-areas:
 "entradas articulo tematica"
@@ -255,8 +255,6 @@ grid-template-areas:
 "entradas publicidad1 publicidad1"
 "entradas entrada1403 links"
 ;
-column-gap: 2%;
-row-gap: 2%;
 }
 .grid-navbar {
     grid-area: entradas;
@@ -292,7 +290,6 @@ row-gap: 2%;
     align-items: center;
     border-style: double;
     padding: 1%;
-    margin-left:1%;
     h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -502,6 +499,9 @@ footer {
             input {
                 width: 90%;
             }
+        .grid-navbar {
+            display: none
+        }
         footer {
             margin-top: 0;
             width: 100%;
@@ -609,6 +609,9 @@ footer {
         .grid-container {
             margin-bottom: 10%;
             row-gap: 2%;
+            button {
+                display: none;
+            }
         }
     }
 }
