@@ -513,7 +513,7 @@ html footer .iconos-rrss div svg {
   html #entrada-14-de-marzo {
     grid-area: entrada1403;
   }
-  html .grid-navbar .grid-entradas-tematica .grid-links, html .grid-entradas-tematica .grid-entradas-tematica .grid-links, html .grid-calendario .grid-entradas-tematica .grid-links, html .grid-links .grid-entradas-tematica .grid-links {
+  html .grid-navbar, html .grid-entradas-tematica, html .grid-calendario, html .grid-links {
     display: none;
   }
   html footer {
