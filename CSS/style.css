@@ -494,18 +494,12 @@ html footer .iconos-rrss div svg {
   html .grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat 8, 1fr;
-    grid-template-areas: "entradas" "articulo" "tematica" "publicidad" "entrada2103" "calendario" "entrada1403" "links";
+    grid-template-rows: repeat 5, 1fr;
+    grid-template-areas: "articulo" "publicidad" "entrada2103" "publicidad1" "entrada1403";
     grid-template-rows: 0%;
-  }
-  html .grid-navbar, html .grid-entradas-tematica, html .grid-calendario, html .grid-links {
-    grid-area: entradas;
   }
   html .grid-article {
     grid-area: articulo;
-  }
-  html .grid-entradas-tematica {
-    grid-area: tematica;
   }
   html .grid-publicidad {
     grid-area: publicidad;
@@ -513,14 +507,14 @@ html footer .iconos-rrss div svg {
   html #entrada-21-de-marzo {
     grid-area: entrada2103;
   }
-  html .grid-calendario {
-    grid-area: calendario;
+  html .grid-publicidad1 {
+    grid-area: publicidad1;
   }
   html #entrada-14-de-marzo {
     grid-area: entrada1403;
   }
-  html .grid-links {
-    grid-area: links;
+  html .grid-navbar .grid-entradas-tematica .grid-links, html .grid-entradas-tematica .grid-entradas-tematica .grid-links, html .grid-calendario .grid-entradas-tematica .grid-links, html .grid-links .grid-entradas-tematica .grid-links {
+    display: none;
   }
   html footer {
     margin-top: 0;
@@ -550,6 +544,64 @@ html footer .iconos-rrss div svg {
   }
   html footer .iconos-rrss div span {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  html h1 {
+    font-size: 2rem;
+    margin: 5%;
+  }
+  html .descripcion-pagina {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 3% 1% 3% 1%;
+  }
+  html button {
+    width: 70%;
+  }
+  html .servicios p {
+    padding-top: 10%;
+    font-size: 1.5rem;
+  }
+  html #datos.clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  html .datos-clientes {
+    width: 30rem;
+    height: 35rem;
+    margin-bottom: 10%;
+  }
+  html ul {
+    margin-top: 10%;
+  }
+  html ul li {
+    font-size: 1.5rem;
+  }
+  html .menu-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  html div {
+    width: 90%;
+    height: 25rem;
+    margin: 0 2.5% 2.5% 2.5%;
+  }
+  html div p {
+    display: none;
+  }
+  html div p a {
+    width: 100%;
+    text-align: center;
+  }
+  html .derechos-propiedad p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {
