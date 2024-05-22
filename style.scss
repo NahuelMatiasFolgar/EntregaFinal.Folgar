@@ -502,6 +502,50 @@ footer {
         .grid-navbar {
             display: none
         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat (9, 1fr);
+            grid-template-areas:
+            "entradas"
+            "tematica "
+            "calendario"
+            "links"
+            "articulo"
+            "publicidad"
+            "entrada2103"
+            "publicidad1"
+            "entrada1403"
+            ;
+            row-gap: 3%;
+            }
+            .grid-dropdown-entradas-antiguas {
+                grid-area: entradas;
+            }
+            .grid-article {
+                grid-area: articulo;
+            }
+            .grid-dropdown-entradas-tematicas {
+                grid-area: tematica;
+            }
+            .grid-publicidad {
+                grid-area: publicidad;
+            }
+            #entrada-21-de-marzo {
+                grid-area:entrada2103
+            }
+            .grid-dropdown-calendario {
+                grid-area: calendario;
+            }
+            .grid-publicidad1 {
+                grid-area:publicidad1
+            }
+            #entrada-14-de-marzo {
+                grid-area: entrada1403
+            }
+            .grid-dropdown-links {
+                grid-area: links;
+            }
         footer {
             margin-top: 0;
             width: 100%;
