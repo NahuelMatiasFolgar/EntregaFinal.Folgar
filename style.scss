@@ -66,6 +66,7 @@ html   {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-bottom: 5%;
         .menu-index {
             width: 23%;
             height: auto;
@@ -116,6 +117,7 @@ html   {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-bottom: 5%;
         div {
             width: 25%;
             height: auto;
@@ -145,7 +147,8 @@ html   {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;
+        margin-bottom: 5%;   
         .datos-clientes {
             width: 25%;
             height: auto;
@@ -219,7 +222,8 @@ html   {
             font-style: normal;
             font-size: 2rem;
             list-style-type: none;
-            color: $azulClaro
+            color: $azulClaro;
+            margin-bottom: 5%; 
         }
         legend {
                 text-align: center;
@@ -262,8 +266,7 @@ grid-template-areas:
 "entradas entrada2103 calendario"
 "entradas publicidad1 publicidad1"
 "entradas entrada1403 links"
-;
-}
+;}
 .grid-navbar {
     grid-area: entradas;
 }

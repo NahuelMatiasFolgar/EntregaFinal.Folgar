@@ -63,6 +63,7 @@ html #menu-index-principal {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 html #menu-index-principal .menu-index {
   width: 23%;
@@ -113,6 +114,7 @@ html #seccion-servicios {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 html #seccion-servicios div {
   width: 25%;
@@ -143,6 +145,7 @@ html #datos-clientes {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 html #datos-clientes .datos-clientes {
   width: 25%;
@@ -217,6 +220,7 @@ html fieldset {
   font-size: 2rem;
   list-style-type: none;
   color: #0D0159;
+  margin-bottom: 5%;
 }
 html legend {
   text-align: center;
