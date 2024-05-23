@@ -11,7 +11,7 @@ html {
 html header {
   width: 100%;
   height: 10rem;
-  background-color: #F2E30F;
+  background-color: #F2CB05;
   padding-right: 2%;
   padding-left: 2%;
   display: flex;
@@ -34,7 +34,7 @@ html header nav .navbar {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 html header nav .navbar ul li {
   padding-left: 2rem;
@@ -54,7 +54,7 @@ html .descripcion-pagina {
   font-style: normal;
   font-size: 2.5rem;
   text-align: justify;
-  color: #0D0159;
+  color: #0F0140;
 }
 html img {
   width: 100%;
@@ -63,13 +63,13 @@ html #menu-index-principal {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 3%;
 }
 html #menu-index-principal .menu-index {
   width: 23%;
   height: auto;
   background-color: #F2E30F;
   border-style: double;
+  border-color: #0F0140;
   padding: 1%, 0, 1%, 0;
   margin: 1rem;
   display: flex;
@@ -80,6 +80,7 @@ html #menu-index-principal .menu-index {
 html #menu-index-principal .menu-index svg {
   width: 60%;
   height: 60%;
+  color: #0D0159;
 }
 html #menu-index-principal .menu-index p {
   font-family: "Bebas Neue", sans-serif;
@@ -114,12 +115,13 @@ html #seccion-servicios {
   flex-wrap: wrap;
 }
 html #seccion-servicios div {
-  width: 40rem;
-  height: 45rem;
+  width: 25%;
+  height: auto;
   background-color: #F2E30F;
   border-style: double;
-  padding: 10px;
-  margin: 10px;
+  border-color: #0F0140;
+  padding: 0.5%;
+  margin: 0.5%;
 }
 html #seccion-servicios div p {
   font-family: "Bebas Neue", sans-serif;
@@ -128,6 +130,7 @@ html #seccion-servicios div p {
   font-size: 2rem;
   text-align: center;
   color: #0D0159;
+  margin-top: 10%;
 }
 html #seccion-servicios div a {
   text-decoration: none;
@@ -142,8 +145,8 @@ html #datos-clientes {
   flex-wrap: wrap;
 }
 html #datos-clientes .datos-clientes {
-  width: 40rem;
-  height: 45rem;
+  width: 25%;
+  height: auto;
   background-color: #F2E30F;
   border-style: double;
   border-color: #0F0140;
@@ -162,6 +165,7 @@ html #datos-clientes .datos-clientes ul li {
   text-align: start;
   list-style-type: none;
   color: #0D0159;
+  text-align: center;
 }
 html .menu-contacto {
   display: flex;
@@ -176,8 +180,7 @@ html .menu-contacto div {
   width: 45%;
   background-color: #F2E30F;
   border-style: double;
-  border-style: dotted;
-  padding: 3%;
+  border-color: #0F0140;
 }
 html .menu-contacto div svg {
   width: 30%;
@@ -189,9 +192,8 @@ html .menu-contacto div p {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
-  text-align: start;
-  list-style-type: none;
+  font-size: 2rem;
+  text-align: center;
   color: #0D0159;
 }
 html .menu-contacto div button {
@@ -202,7 +204,7 @@ html .menu-contacto div button {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 html fieldset {
   display: flex;
@@ -221,7 +223,7 @@ html legend {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #0D0159;
 }
 html input {
@@ -235,6 +237,7 @@ html select {
   margin: 1rem;
   font-size: 2rem;
   text-align: center;
+  color: #0D0159;
 }
 html .boton-formulario {
   width: auto;
@@ -285,6 +288,7 @@ html .grid-navbar, html .grid-links, html .grid-calendario, html .grid-entradas-
   justify-content: flex-start;
   align-items: center;
   border-style: double;
+  border-color: #0F0140;
   padding: 1%;
 }
 html .grid-navbar h2, html .grid-links h2, html .grid-calendario h2, html .grid-entradas-tematica h2 {
@@ -293,14 +297,14 @@ html .grid-navbar h2, html .grid-links h2, html .grid-calendario h2, html .grid-
   font-style: normal;
   font-size: 2.5rem;
   list-style-type: none;
-  color: #0D0159;
+  color: #0F0140;
   margin: 5% 0 5% 0;
 }
 html .grid-navbar ul, html .grid-links ul, html .grid-calendario ul, html .grid-entradas-tematica ul {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   list-style-type: none;
   color: #0D0159;
   padding: 1%;
@@ -314,31 +318,31 @@ html .grid-navbar ul a, html .grid-links ul a, html .grid-calendario ul a, html 
   color: #0D0159;
 }
 html .grid-article {
-  background-color: yellow;
+  background-color: #F2E30F;
   border-style: double;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  color: #0D0159;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+html .grid-article section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1% 0 1%;
+}
 html .grid-article span {
-  display: inline;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  color: #0D0159;
+  font-size: 2.5rem;
+  color: #0F0140;
 }
 html .grid-article div {
   width: 90%;
 }
 html .grid-article p {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+  font-size: 2rem;
   color: #0D0159;
   text-decoration: none;
   text-align: center;
@@ -368,7 +372,7 @@ html footer .derechos-propiedad {
   font-style: normal;
   font-size: 2rem;
   list-style-type: none;
-  color: #0D0159;
+  color: white;
 }
 html footer .iconos-rrss {
   width: 30rem;
@@ -397,7 +401,7 @@ html footer .iconos-rrss div span {
   color: #0D0159;
 }
 html footer .iconos-rrss div svg {
-  color: #0F0140;
+  color: #0D0159;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   html .navbar-toggler {
@@ -407,7 +411,7 @@ html footer .iconos-rrss div svg {
     margin-bottom: 20%;
   }
   html .navbar-collapse {
-    background-color: #F2E30F;
+    background-color: #F2CB05;
   }
   html .navbar-toggler-icon {
     width: 95%;
@@ -415,7 +419,7 @@ html footer .iconos-rrss div svg {
     background-color: #F2E30F;
   }
   html h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin: 7.5%;
   }
   html img {
@@ -438,16 +442,35 @@ html footer .iconos-rrss div svg {
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 2% 5% 2%;
+  }
+  html #menu-index-principal .menu-index p {
+    font-size: 2rem;
+  }
+  html #seccion-servicios {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  html .servicios {
+  html #seccion-servicios .servicios {
     width: 90%;
     height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 2% 5% 2%;
   }
-  html .servicios p {
-    padding-top: 10%;
-    font-size: 1.5rem;
+  html #seccion-servicios .servicios svg {
+    width: 30%;
+    padding-bottom: 10%;
+  }
+  html #seccion-servicios .servicios p {
+    font-size: 2rem;
   }
   html #datos.clientes {
     display: flex;
@@ -456,36 +479,41 @@ html footer .iconos-rrss div svg {
     align-content: center;
   }
   html .datos-clientes {
-    width: 30rem;
-    height: 35rem;
-    margin-bottom: 10%;
+    width: 90% !important;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 2% 5% 2%;
   }
-  html .datos-clientes ul {
-    margin-top: 10%;
-    font-size: 1.5rem;
+  html .datos-clientes li {
+    font-size: 2rem;
   }
   html .menu-contacto {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
   }
   html .menu-contacto div {
-    width: 90% !important;
-    height: 20rem !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    padding: 10% 0 10% 0;
     margin-bottom: 5%;
+  }
+  html .menu-contacto div svg {
+    margin-bottom: 10%;
   }
   html .menu-contacto div p {
     display: none;
   }
   html fieldset {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
-  html input {
-    width: 90%;
+  html input, html select {
+    width: 80%;
   }
   html .grid-navbar, html .grid-entradas-tematica, html .grid-calendario, html .grid-links {
     display: none;
@@ -504,8 +532,8 @@ html footer .iconos-rrss div svg {
     width: 100%;
     padding: 1rem;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.5rem;
-    background-color: #F2E30F;
+    font-size: 2.5rem;
+    background-color: #F2CB05;
     color: #0D0159;
   }
   html .grid-dropdown-entradas-antiguas ul, html .grid-dropdown-links ul, html .grid-dropdown-calendario ul, html .grid-dropdown-entradas-tematicas ul {
@@ -514,7 +542,7 @@ html footer .iconos-rrss div svg {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     list-style-type: none;
     color: #0D0159;
     padding: 1%;
@@ -532,6 +560,15 @@ html footer .iconos-rrss div svg {
   }
   html .grid-article {
     grid-area: articulo;
+  }
+  html .grid-article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .grid-article section span {
+    text-align: center;
   }
   html .grid-dropdown-entradas-tematicas {
     grid-area: tematica;

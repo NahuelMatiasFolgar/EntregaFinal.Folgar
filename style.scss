@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+// Variables colores
+$amarilloClaro: #F2E30F;
+$amarilloOscuro: #F2CB05;
+$azulClaro: #0D0159;
+$azulOscuro: #0F0140;
+$ocre:  #403001;
+// Fin Variables colores
 html   {
     font-size: 62.5%;
     header {
         width: 100%;
         height: 10rem;
-        background-color:#F2E30F;
+        background-color:$amarilloOscuro;
         padding-right: 2%;
         padding-left: 2%;
         display: flex;
@@ -20,7 +27,7 @@ html   {
             width: 6rem;
             margin-top: 30%;
             border-style: double;
-            border-color: #0F0140;
+            border-color: $azulOscuro;
         }
         nav {
             display: flex;
@@ -30,7 +37,7 @@ html   {
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 font-style: normal;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 ul li {
                     padding-left: 2rem;
                     text-align: center;
@@ -52,7 +59,7 @@ html   {
         font-style: normal;
         font-size: 2.5rem;
         text-align: justify;
-        color: #0D0159;
+        color: $azulOscuro;
     }
     img {
         width: 100%
@@ -61,12 +68,12 @@ html   {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 3%;
         .menu-index {
             width: 23%;
             height: auto;
-            background-color:#F2E30F;
+            background-color:$amarilloClaro;
             border-style: double;
+            border-color: $azulOscuro;
             padding: 1%, 0, 1%,0;
             margin: 1rem;
             display: flex;
@@ -76,6 +83,7 @@ html   {
             svg {
                 width: 60%;
                 height: 60%;
+                color: $azulClaro;
             }
             p {
                 font-family: "Bebas Neue", sans-serif;
@@ -83,7 +91,7 @@ html   {
                 font-style: normal;
                 font-size: 1.6rem;
                 text-align: center;
-                color: #0D0159;
+                color: $azulClaro;
                 }   
             a {
                 display: flex;
@@ -100,8 +108,8 @@ html   {
             button {
                 width: 300%;
                 padding: 1rem;
-                background-color:#0D0159;
-                color:#F2E30F;
+                background-color: $azulClaro;
+                color: $amarilloClaro;
                 }
             }
         }
@@ -111,23 +119,25 @@ html   {
         justify-content: space-evenly;
         flex-wrap: wrap;
         div {
-            width: 40rem;
-            height: 45rem;
-            background-color:#F2E30F;
+            width: 25%;
+            height: auto;
+            background-color: $amarilloClaro;
             border-style: double;
-            padding: 10px;
-            margin: 10px;
+            border-color: $azulOscuro;
+            padding: 0.5%;
+            margin: 0.5%;
             p {
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 font-style: normal;
                 font-size: 2rem;
                 text-align: center;
-                color: #0D0159
+                color: $azulClaro;
+                margin-top: 10%;
                 }
             a {
                 text-decoration: none;
-                color: #0D0159;
+                color: $azulClaro;
                 font-weight: 800;
                 display: block;
                 }
@@ -139,11 +149,11 @@ html   {
         justify-content: space-evenly;
         flex-wrap: wrap;   
         .datos-clientes {
-            width: 40rem;
-            height: 45rem;
-            background-color:#F2E30F;
+            width: 25%;
+            height: auto;
+            background-color: $amarilloClaro;
             border-style: double;
-            border-color: #0F0140;
+            border-color: $azulOscuro;
             padding: 10px;
             margin: 10px;
             display: inline-block;
@@ -156,7 +166,8 @@ html   {
                     font-size: 2rem;
                     text-align: start;
                     list-style-type: none;
-                    color: #0D0159
+                    color: $azulClaro;
+                    text-align: center;
                     }
                 }
             }
@@ -171,34 +182,32 @@ html   {
             justify-content: space-around;
             align-items: center;
             width: 45%;
-            background-color:#F2E30F;
+            background-color:$amarilloClaro;
             border-style: double;
-            border-style: dotted;
-            padding: 3%;
-        svg {
+            border-color: $azulOscuro;
+            svg {
             width: 30%;
             height: 30%;
-            color: #0D0159
+            color: $azulClaro
             }
         p {
             width: auto;
             font-family: "Bebas Neue", sans-serif;
             font-weight: 400;
             font-style: normal;
-            font-size: 1.5rem;
-            text-align: start;
-            list-style-type: none;
-            color: #0D0159
+            font-size: 2rem;
+            text-align: center;
+            color: $azulClaro
             }
         button {
             width: 100%;
             padding: 1rem;
-            background-color:#0D0159;
-            color:#F2E30F;
+            background-color:$azulClaro;
+            color: $amarilloClaro;
             font-family: "Bebas Neue", sans-serif;
             font-weight: 400;
             font-style: normal;
-            font-size: 1.5rem;
+            font-size: 2rem;
             }
             }
         }
@@ -212,15 +221,15 @@ html   {
             font-style: normal;
             font-size: 2rem;
             list-style-type: none;
-            color: #0D0159
+            color: $azulClaro
         }
         legend {
                 text-align: center;
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 font-style: normal;
-                font-size: 2rem;
-                color: #0D0159
+                font-size: 3rem;
+                color: $azulClaro
             }
             input {
                 width:50%;
@@ -233,12 +242,13 @@ html   {
                 margin: 1rem;
                 font-size: 2rem;
                 text-align: center;
+                color: $azulClaro;
                 }
             .boton-formulario {
                 width: auto;
                 padding: 0.5%;
-                background-color:#0D0159;
-                color:#F2E30F;
+                background-color: $azulClaro;
+                color: $amarilloClaro;
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 font-style: normal;
@@ -289,6 +299,7 @@ grid-template-areas:
     justify-content: flex-start;
     align-items: center;
     border-style: double;
+    border-color: $azulOscuro;
     padding: 1%;
     h2 {
     font-family: "Bebas Neue", sans-serif;
@@ -296,16 +307,16 @@ grid-template-areas:
     font-style: normal;
     font-size: 2.5rem;
     list-style-type: none;
-    color: #0D0159;
+    color: $azulOscuro;
     margin: 5% 0 5% 0;
     }
     ul {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
     list-style-type: none;
-    color: #0D0159;
+    color: $azulClaro;
     padding: 1%;
         li {
             list-style-type: none;
@@ -313,40 +324,40 @@ grid-template-areas:
         }
             a {
                 text-decoration: none;
-                color: #0D0159;
+                color: $azulClaro;
                 }
             }
         }
 .grid-article {
-    background-color: yellow;
+    background-color: $amarilloClaro;
     border-style: double;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    color: #0D0159;
-    text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-        span {
-            display: inline;
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 1.5rem;
-            padding-bottom: 1rem;
-            color: #0D0159;
+            section {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 1% 0 1%;
             }
-        div {
-            width: 90%;
+            span {
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 2.5rem;
+                color: $azulOscuro;
+                }
+            div {
+                width: 90%;
             }
-        p {
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 1.5rem;
-            padding-bottom: 1rem;
-            color: #0D0159;
-            text-decoration: none;
-            text-align: center
+            p {
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 2rem;
+                color: $azulClaro;
+                text-decoration: none;
+                text-align: center
+            }
         }
-    }
 .grid-entradas-tematica {
     @extend .grid-navbar
 }
@@ -367,7 +378,7 @@ aside {
         }
 footer {
     height: 200px;
-    background-color: #403001;
+    background-color: $ocre;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -380,11 +391,11 @@ footer {
         font-style: normal;
         font-size: 2rem;
         list-style-type: none;
-        color: #0D0159;
+        color: white;
         }
         .iconos-rrss {
             width: 30rem;
-            background-color:#F2CB05;
+            background-color:$amarilloOscuro;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -404,31 +415,31 @@ footer {
                 font-weight: 400;
                 font-style: normal;
                 font-size: 1.5rem;
-                color: #0D0159
+                color: $azulClaro
                 }
             svg {
-            color: #0F0140;
+            color: $azulClaro;
                 }
                 }
             }
         }
     @media (min-width: 320px) and (max-width:767px) {
         .navbar-toggler {
-            background-color:#0D0159;
+            background-color:$azulClaro;
             width: 5.5rem;
             height: 5.5rem;
             margin-bottom: 20%;
             }
         .navbar-collapse {
-            background-color: #F2E30F
+            background-color: $amarilloOscuro
             }
         .navbar-toggler-icon {
             width: 95%;
             height: 90%;
-            background-color: #F2E30F;
+            background-color: $amarilloClaro;
             }
         h1 {
-            font-size: 2rem;
+            font-size: 3.5rem;
             margin: 7.5%;
             }
         img {
@@ -450,54 +461,78 @@ footer {
                 padding: 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
+                padding: 5% 2% 5% 2%;
+                    p {
+                        font-size: 2rem;
+                    }
                 }
             }
-        .servicios {
-            width: 90%;
-            height: auto;
-                p {
-                padding-top: 10%;
-                font-size: 1.5rem;
+        #seccion-servicios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .servicios {
+                width: 90% ; 
+                height: auto;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 5% 2% 5% 2%;
+                    svg {
+                        width: 30%;
+                        padding-bottom: 10%;
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
                 }
             }
         #datos.clientes {
-            display: flex;
+            display: flex; 
             flex-direction: column;
             justify-content:center;
             align-content: center;
-            }
-        .datos-clientes {
-            width: 30rem;
-            height: 35rem;
-            margin-bottom: 10%;
-                ul {
-                margin-top: 10%;
-                font-size: 1.5rem;
-                }   
+                }
+                .datos-clientes {
+                    width: 90% !important; 
+                    height: auto;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 5% 2% 5% 2%;
+                        li {
+                        font-size: 2rem;
+                        }
             }
         .menu-contacto {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
                 div {
-                width: 90% !important;
-                height: 20rem !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                width: 90%;
+                height: auto;
+                padding: 10% 0 10% 0;
                 margin-bottom: 5%;
-                p {
-                display: none;
+                    svg {
+                        margin-bottom: 10%;
+                    }
+                    p {
+                    display: none;
+                    }
                 }
             }
-        }
-            fieldset {
-                font-size: 1rem;}
-            input {
-                width: 90%;
+        fieldset {
+                font-size: 1.75rem;}
+            input, select {
+                width: 80%;
             }
         .grid-navbar {
             display: none
@@ -525,19 +560,19 @@ footer {
                     width: 100%;
                     padding: 1rem;
                     font-family: "Bebas Neue", sans-serif;
-                    font-size: 1.5rem;
-                    background-color:#F2E30F;
-                    color:#0D0159;
+                    font-size: 2.5rem;
+                    background-color:$amarilloOscuro;
+                    color:$azulClaro;
                         }
                     ul {
                         width: 100%;
-                        background-color: #F2E30F;
+                        background-color:$amarilloClaro;
                         font-family: "Bebas Neue", sans-serif;
                         font-weight: 400;
                         font-style: normal;
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         list-style-type: none;
-                        color: #0D0159;
+                        color: $azulClaro;
                         padding: 1%;
                             li {
                                 display: flex;
@@ -548,12 +583,21 @@ footer {
                             }
                                 a {
                                     text-decoration: none;
-                                    color: #0D0159;
+                                    color: $azulClaro;
                                     }
                                 }
                             }    
             .grid-article {
                 grid-area: articulo;
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            text-align: center;
+                        }
+                    }
             }
             .grid-dropdown-entradas-tematicas {
                 grid-area: tematica;
