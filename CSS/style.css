@@ -449,6 +449,7 @@ html footer .iconos-rrss div svg {
     justify-content: space-around;
     align-items: center;
     padding: 5% 2% 5% 2%;
+    margin-bottom: 5%;
   }
   html #menu-index-principal .menu-index p {
     font-size: 2rem;
@@ -468,6 +469,7 @@ html footer .iconos-rrss div svg {
     justify-content: space-around;
     align-items: center;
     padding: 5% 2% 5% 2%;
+    margin-bottom: 5%;
   }
   html #seccion-servicios .servicios svg {
     width: 30%;
@@ -491,6 +493,7 @@ html footer .iconos-rrss div svg {
     justify-content: space-around;
     align-items: center;
     padding: 5% 2% 5% 2%;
+    margin-bottom: 5%;
   }
   html .datos-clientes li {
     font-size: 2rem;
@@ -528,6 +531,7 @@ html footer .iconos-rrss div svg {
     grid-template-rows: repeat 9, 1fr;
     grid-template-areas: "entradas" "tematica " "calendario" "links" "articulo" "publicidad" "entrada2103" "publicidad1" "entrada1403";
     row-gap: 1%;
+    margin-bottom: 5%;
   }
   html .grid-dropdown-entradas-antiguas, html .grid-dropdown-links, html .grid-dropdown-calendario, html .grid-dropdown-entradas-tematicas {
     grid-area: entradas;
