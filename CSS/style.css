@@ -160,6 +160,10 @@ html #datos-clientes .datos-clientes {
 }
 html #datos-clientes .datos-clientes ul {
   margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 html #datos-clientes .datos-clientes ul li {
   font-family: "Bebas Neue", sans-serif;
@@ -169,7 +173,6 @@ html #datos-clientes .datos-clientes ul li {
   text-align: start;
   list-style-type: none;
   color: #0D0159;
-  text-align: center;
 }
 html .menu-contacto {
   display: flex;
