@@ -79,8 +79,9 @@ html #menu-index-principal .menu-index {
   align-items: center;
 }
 html #menu-index-principal .menu-index svg {
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
+  margin: 10% 0 10% 0;
   color: #0D0159;
 }
 html #menu-index-principal .menu-index p {
@@ -450,6 +451,10 @@ html footer .iconos-rrss div svg {
     align-items: center;
     padding: 5% 2% 5% 2%;
     margin-bottom: 5%;
+  }
+  html #menu-index-principal .menu-index svg {
+    width: 30%;
+    margin: 5% 0 5% 0;
   }
   html #menu-index-principal .menu-index p {
     font-size: 2rem;
