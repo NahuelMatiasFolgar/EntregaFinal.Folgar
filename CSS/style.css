@@ -688,6 +688,9 @@ html footer .iconos-rrss div svg {
   }
 }
 @media (min-width: 1024px) {
+  html heade header {
+    padding: 0;
+  }
   html h1 {
     margin: 3%;
   }

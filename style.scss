@@ -716,7 +716,10 @@ footer {
                 text-align: center;
             }
         }
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) {heade
+        header {
+            padding:0
+        }
         h1 {
             margin: 3%;
         }
