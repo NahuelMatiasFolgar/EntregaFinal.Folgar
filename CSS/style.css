@@ -16,16 +16,18 @@ html header {
   padding-left: 2%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 html header nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-html header nav a {
+html header nav img {
   height: 5rem;
   width: auto;
+  border-style: double;
+  color: #0F0140;
 }
 html header nav ul li, html header nav a {
   font-family: "Bebas Neue", sans-serif;
