@@ -231,12 +231,12 @@ html .boton-formulario {
 html .grid-container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: repeat 5, 30rem;
+  grid-template-rows: repeat 5, 1fr;
   grid-template-areas: "entradas articulo tematica" ". publicidad publicidad " ". entrada2103 calendario" ". publicidad1 publicidad1" ". entrada1403 links";
 }
 html .grid-navbar, html .grid-links, html .grid-calendario, html .grid-entradas-tematica {
   grid-area: entradas;
-  position: fixed;
+  position: sticky;
 }
 html .grid-article {
   grid-area: articulo;
