@@ -10,10 +10,11 @@ html {
 }
 html header {
   background-color: #F2CB05;
+  padding: 2.5%;
 }
 html header #logo {
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
   border-style: double;
   border-color: #0F0140;
 }
@@ -21,7 +22,7 @@ html header a, html header li {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 html h1 {
@@ -403,8 +404,8 @@ html footer .iconos-rrss div svg {
 @media (min-width: 320px) and (max-width: 767px) {
   html .navbar-toggler {
     background-color: #0D0159;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
   html .navbar-collapse {
     background-color: #F2CB05;

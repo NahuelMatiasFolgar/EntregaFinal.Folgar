@@ -13,9 +13,10 @@ html   {
     font-size: 62.5%;
 header {
     background-color: $amarilloOscuro;
+    padding:2.5%;
         #logo {
-            width: 5rem;
-            height: 5rem;
+            width: 7rem;
+            height: 7rem;
             border-style: double;
             border-color: $azulOscuro;
         }
@@ -23,7 +24,7 @@ header {
             font-family: "Bebas Neue", sans-serif;
             font-weight: 400;
             font-style: normal;
-            font-size: 2rem;
+            font-size: 2.5rem;
             text-align: center;
             }
     }
@@ -420,8 +421,8 @@ footer {
     @media (min-width: 320px) and (max-width:767px) {
         .navbar-toggler {
             background-color:$azulClaro;
-            width: 5rem;
-            height: 5rem;
+            width: 7rem;
+            height: 7rem;
             }
         .navbar-collapse {
             background-color: $amarilloOscuro;
