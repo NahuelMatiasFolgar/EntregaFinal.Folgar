@@ -13,6 +13,19 @@ html   {
     font-size: 62.5%;
 header {
     background-color: $amarilloOscuro;
+        #logo {
+            width: 5rem;
+            height: 5rem;
+            border-style: double;
+            border-color: $azulOscuro;
+        }
+        a, li {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 2rem;
+            text-align: center;
+            }
     }
     h1 {
         font-family: "Bebas Neue", sans-serif;
@@ -245,6 +258,7 @@ grid-template-areas:
 .grid-navbar {
     grid-area: entradas;
     position: sticky;
+    top: 15%;
 }
 .grid-article {
     grid-area: articulo;
@@ -406,14 +420,14 @@ footer {
     @media (min-width: 320px) and (max-width:767px) {
         .navbar-toggler {
             background-color:$azulClaro;
-            width: 5.5rem;
-            height: 5.5rem;
+            width: 5rem;
+            height: 5rem;
             }
         .navbar-collapse {
-            background-color: $amarilloOscuro
+            background-color: $amarilloOscuro;
             }
         .navbar-toggler-icon {
-            width: 95%;
+            width: 100%;
             height: 90%;
             background-color: $amarilloClaro;
             }
