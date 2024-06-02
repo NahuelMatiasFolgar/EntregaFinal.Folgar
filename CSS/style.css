@@ -23,7 +23,7 @@ html header nav {
   flex-direction: row;
   justify-content: flex-end;
 }
-html header nav .container-fluid {
+html header nav a {
   height: 50%;
   width: auto;
 }
