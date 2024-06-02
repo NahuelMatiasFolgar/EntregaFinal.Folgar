@@ -38,6 +38,9 @@ html header .navbar ul li {
   flex-direction: column;
   justify-content: center;
 }
+html header .navbar ul li:hover {
+  background-color: aliceblue;
+}
 html h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -69,7 +72,7 @@ html #menu-index-principal .menu-index {
   background-color: #F2E30F;
   border-style: double;
   border-color: #0F0140;
-  padding: 1%, 0, 1%, 0;
+  padding: 3% 0 3% 0;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -79,7 +82,6 @@ html #menu-index-principal .menu-index {
 html #menu-index-principal .menu-index svg {
   width: 40%;
   height: 40%;
-  margin: 10% 0 10% 0;
   color: #0D0159;
 }
 html #menu-index-principal .menu-index p {
@@ -89,6 +91,7 @@ html #menu-index-principal .menu-index p {
   font-size: 2rem;
   text-align: center;
   color: #0D0159;
+  margin: 0 3% 0 3%;
 }
 html #menu-index-principal .menu-index a {
   display: flex;
@@ -99,14 +102,19 @@ html #menu-index-principal .menu-index a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
 }
 html #menu-index-principal .menu-index button {
   width: 300%;
   padding: 1rem;
+  border-color: #0D0159;
   background-color: #0D0159;
   color: #F2E30F;
+}
+html #menu-index-principal .menu-index button:hover {
+  color: #0D0159;
+  background-color: #F2E30F;
 }
 html #seccion-servicios {
   display: flex;
@@ -136,8 +144,11 @@ html #seccion-servicios div p {
 html #seccion-servicios div a {
   text-decoration: none;
   color: #0D0159;
-  font-weight: 800;
+  font-weight: 1000;
   display: block;
+}
+html #seccion-servicios div a:hover {
+  background-color: aliceblue;
 }
 html #datos-clientes {
   display: flex;
@@ -182,6 +193,7 @@ html .menu-contacto div {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 2% 0 2% 0;
   width: 45%;
   background-color: #F2E30F;
   border-style: double;
@@ -200,6 +212,7 @@ html .menu-contacto div p {
   font-size: 2rem;
   text-align: center;
   color: #0D0159;
+  padding: 0 3% 0 3%;
 }
 html .menu-contacto div button {
   width: 100%;
@@ -210,6 +223,10 @@ html .menu-contacto div button {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+}
+html .menu-contacto div button:hover {
+  background-color: #F2E30F;
+  color: #0D0159;
 }
 html fieldset {
   display: flex;
@@ -297,7 +314,7 @@ html .grid-navbar, html .grid-links, html .grid-calendario, html .grid-entradas-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-content: center;
   border-style: double;
   border-color: #0F0140;
   padding: 1%;
@@ -310,6 +327,7 @@ html .grid-navbar h2, html .grid-links h2, html .grid-calendario h2, html .grid-
   list-style-type: none;
   color: #0F0140;
   margin: 5% 0 5% 0;
+  text-align: center;
 }
 html .grid-navbar ul, html .grid-links ul, html .grid-calendario ul, html .grid-entradas-tematica ul {
   font-family: "Bebas Neue", sans-serif;
@@ -323,10 +341,14 @@ html .grid-navbar ul, html .grid-links ul, html .grid-calendario ul, html .grid-
 html .grid-navbar ul li, html .grid-links ul li, html .grid-calendario ul li, html .grid-entradas-tematica ul li {
   list-style-type: none;
   padding-bottom: 1rem;
+  text-align: center;
 }
 html .grid-navbar ul a, html .grid-links ul a, html .grid-calendario ul a, html .grid-entradas-tematica ul a {
   text-decoration: none;
   color: #0D0159;
+}
+html .grid-navbar ul a:hover, html .grid-links ul a:hover, html .grid-calendario ul a:hover, html .grid-entradas-tematica ul a:hover {
+  background-color: #F2E30F;
 }
 html .grid-article {
   background-color: #F2E30F;
@@ -398,13 +420,17 @@ html footer .iconos-rrss div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2%;
+}
+html footer .iconos-rrss div:hover {
+  border-style: double;
+  border-color: #0F0140;
 }
 html footer .iconos-rrss div span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-right: 1rem;
+  align-content: center;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
