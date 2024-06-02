@@ -10,20 +10,33 @@ html {
 }
 html header {
   background-color: #F2CB05;
-  padding: 2.5%;
 }
-html header #logo {
-  width: 7rem;
-  height: 7rem;
+html header .navbar {
+  padding: 1%;
+}
+html header .navbar img {
   border-style: double;
   border-color: #0F0140;
+  width: 7.5rem;
+  height: 7.5rem;
 }
-html header a, html header li {
+html header .navbar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+html header .navbar ul li {
+  width: 10%;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  color: #0D0159;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 html h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -73,7 +86,7 @@ html #menu-index-principal .menu-index p {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   color: #0D0159;
 }
@@ -408,7 +421,10 @@ html footer .iconos-rrss div svg {
     height: 7rem;
   }
   html .navbar-collapse {
-    background-color: #F2CB05;
+    background-color: #F2E30F;
+  }
+  html .navbar-collapse li {
+    width: 100% !important;
   }
   html .navbar-toggler-icon {
     width: 100%;
@@ -482,7 +498,7 @@ html footer .iconos-rrss div svg {
     align-content: center;
   }
   html .datos-clientes {
-    width: 90% !important;
+    width: 90%;
     height: auto;
     padding: 0;
     display: flex;
@@ -688,10 +704,7 @@ html footer .iconos-rrss div svg {
   }
 }
 @media (min-width: 1024px) {
-  html heade header {
-    padding: 0;
-  }
-  html h1 {
+  html heade h1 {
     margin: 3%;
   }
   html #portada {
