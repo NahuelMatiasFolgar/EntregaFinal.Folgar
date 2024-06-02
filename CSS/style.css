@@ -23,7 +23,11 @@ html header nav {
   flex-direction: row;
   justify-content: flex-end;
 }
-html header nav ul li {
+html header nav .container-fluid {
+  height: 50%;
+  width: auto;
+}
+html header nav ul li, html header nav a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;

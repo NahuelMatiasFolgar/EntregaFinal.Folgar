@@ -24,7 +24,11 @@ html   {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            ul li {   
+        .container-fluid {
+            height: 50%;
+            width: auto;
+        }
+            ul li, a {   
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 font-style: normal;
