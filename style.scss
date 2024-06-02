@@ -237,19 +237,21 @@ grid-template-columns: 20% 60% 20%;
 grid-template-rows: repeat (5, 30rem);
 grid-template-areas:
 "entradas articulo tematica"
-"entradas publicidad publicidad "
-"entradas entrada2103 calendario"
-"entradas publicidad1 publicidad1"
-"entradas entrada1403 links"
+". publicidad publicidad "
+". entrada2103 calendario"
+". publicidad1 publicidad1"
+". entrada1403 links"
 ;}
 .grid-navbar {
     grid-area: entradas;
+    position: fixed;
 }
 .grid-article {
     grid-area: articulo;
 }
 .grid-entradas-tematica {
     grid-area: tematica;
+    position: static;
 }
 .grid-publicidad {
     grid-area: publicidad;
@@ -259,6 +261,7 @@ grid-template-areas:
 }
 .grid-calendario {
     grid-area: calendario;
+    position: static;
 }
 .grid-publicidad1 {
     grid-area:publicidad1
@@ -268,6 +271,7 @@ grid-template-areas:
 }
 .grid-links {
     grid-area: links;
+    position: static;
 }
 .grid-navbar {
     display: flex;

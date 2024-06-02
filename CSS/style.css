@@ -232,16 +232,18 @@ html .grid-container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: repeat 5, 30rem;
-  grid-template-areas: "entradas articulo tematica" "entradas publicidad publicidad " "entradas entrada2103 calendario" "entradas publicidad1 publicidad1" "entradas entrada1403 links";
+  grid-template-areas: "entradas articulo tematica" ". publicidad publicidad " ". entrada2103 calendario" ". publicidad1 publicidad1" ". entrada1403 links";
 }
 html .grid-navbar, html .grid-links, html .grid-calendario, html .grid-entradas-tematica {
   grid-area: entradas;
+  position: fixed;
 }
 html .grid-article {
   grid-area: articulo;
 }
 html .grid-entradas-tematica {
   grid-area: tematica;
+  position: static;
 }
 html .grid-publicidad {
   grid-area: publicidad;
@@ -251,6 +253,7 @@ html #entrada-21-de-marzo {
 }
 html .grid-calendario {
   grid-area: calendario;
+  position: static;
 }
 html .grid-publicidad1 {
   grid-area: publicidad1;
@@ -260,6 +263,7 @@ html #entrada-14-de-marzo {
 }
 html .grid-links {
   grid-area: links;
+  position: static;
 }
 html .grid-navbar, html .grid-links, html .grid-calendario, html .grid-entradas-tematica {
   display: flex;
