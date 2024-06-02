@@ -24,7 +24,7 @@ html header nav {
   justify-content: flex-end;
 }
 html header nav a {
-  height: 50%;
+  height: 5rem;
   width: auto;
 }
 html header nav ul li, html header nav a {
