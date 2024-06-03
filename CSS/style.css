@@ -123,7 +123,7 @@ html #seccion-servicios {
   flex-wrap: wrap;
   margin-bottom: 5%;
 }
-html #seccion-servicios div {
+html #seccion-servicios .servicios {
   width: 25%;
   height: auto;
   background-color: #F2E30F;
@@ -132,7 +132,7 @@ html #seccion-servicios div {
   padding: 0.5%;
   margin: 0.5%;
 }
-html #seccion-servicios div p {
+html #seccion-servicios .servicios p {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -141,13 +141,16 @@ html #seccion-servicios div p {
   color: #0D0159;
   margin-top: 10%;
 }
-html #seccion-servicios div a {
+html #seccion-servicios .servicios aside {
+  width: 50%;
+}
+html #seccion-servicios .servicios aside a {
   text-decoration: none;
   color: #0D0159;
   font-weight: 1000;
   display: block;
 }
-html #seccion-servicios div a:hover {
+html #seccion-servicios .servicios aside a:hover {
   background-color: aliceblue;
 }
 html #datos-clientes {
@@ -512,10 +515,6 @@ html footer .iconos-rrss div svg {
     align-items: center;
     padding: 5% 2% 5% 2%;
     margin-bottom: 5%;
-  }
-  html #seccion-servicios .servicios svg {
-    width: 30%;
-    padding-bottom: 10%;
   }
   html #seccion-servicios .servicios p {
     font-size: 2rem;

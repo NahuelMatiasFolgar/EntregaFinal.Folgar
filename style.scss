@@ -125,7 +125,7 @@ html   {
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-bottom: 5%;
-        div {
+        .servicios {
             width: 25%;
             height: auto;
             background-color: $amarilloClaro;
@@ -142,6 +142,9 @@ html   {
                 color: $azulClaro;
                 margin-top: 10%;
                 }
+        aside {
+                width: 50%;
+        
             a {
                 text-decoration: none;
                 color: $azulClaro;
@@ -153,6 +156,7 @@ html   {
                 }
                 }
             }
+        }
     #datos-clientes {
         display: flex;
         flex-direction: row;
@@ -528,10 +532,6 @@ footer {
                 align-items: center;
                 padding: 5% 2% 5% 2%;
                 margin-bottom: 5%;
-                    svg {
-                        width: 30%;
-                        padding-bottom: 10%;
-                    }
                     p {
                         font-size: 2rem;
                     }
