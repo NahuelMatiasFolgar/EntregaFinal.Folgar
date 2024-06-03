@@ -51,8 +51,7 @@ html   {
         font-size: 3.5rem;
         text-align: center;
         color: $azulOscuro;
-        // padding: 3%;
-    }
+        }
     .descripcion-pagina {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
@@ -394,7 +393,10 @@ grid-template-areas:
 }
 .grid-calendario {
     @extend .grid-navbar;
+    ul {
+        font-size: 1.85rem
     }
+}
 .grid-links {
     @extend .grid-navbar;
     }
@@ -542,7 +544,7 @@ footer {
             align-content: center;
                 }
                 .datos-clientes {
-                    width: 90% ; 
+                    width: 90% !important; 
                     height: auto;
                     padding: 0;
                     display: flex;
@@ -608,6 +610,10 @@ footer {
                     font-size: 2.5rem;
                     background-color:$amarilloOscuro;
                     color:$azulClaro;
+                &:hover {
+                    background-color:$azulClaro;
+                    color:$amarilloOscuro;
+                }
                         }
                     ul {
                         width: 100%;
