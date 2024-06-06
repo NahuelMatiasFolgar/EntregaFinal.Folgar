@@ -141,16 +141,13 @@ html #seccion-servicios .servicios p {
   color: #0D0159;
   margin-top: 10%;
 }
-html #seccion-servicios .servicios aside {
-  width: 50%;
-}
-html #seccion-servicios .servicios aside a {
+html #seccion-servicios .servicios p a {
   text-decoration: none;
   color: #0D0159;
   font-weight: 1000;
   display: block;
 }
-html #seccion-servicios .servicios aside a:hover {
+html #seccion-servicios .servicios p a:hover {
   background-color: aliceblue;
 }
 html #datos-clientes {
@@ -518,6 +515,9 @@ html footer .iconos-rrss div svg {
   }
   html #seccion-servicios .servicios p {
     font-size: 2rem;
+  }
+  html #seccion-servicios .servicios p a {
+    text-decoration: none;
   }
   html #datos.clientes {
     display: flex;

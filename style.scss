@@ -141,10 +141,6 @@ html   {
                 text-align: center;
                 color: $azulClaro;
                 margin-top: 10%;
-                }
-        aside {
-                width: 50%;
-        
             a {
                 text-decoration: none;
                 color: $azulClaro;
@@ -152,11 +148,11 @@ html   {
                 display: block;
             &:hover {
                 background-color: aliceblue;
-            }
-                }
+                    }
                 }
             }
         }
+    }
     #datos-clientes {
         display: flex;
         flex-direction: row;
@@ -534,6 +530,9 @@ footer {
                 margin-bottom: 5%;
                     p {
                         font-size: 2rem;
+                        a {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
