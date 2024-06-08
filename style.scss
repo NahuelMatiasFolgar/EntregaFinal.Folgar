@@ -728,8 +728,92 @@ footer {
             }
         }
     @media (min-width: 768px) and (max-width: 1023px) {
-        
-    }
+        .navbar-toggler {
+            background-color:$azulClaro;
+            width: 7rem;
+            height: 7rem;
+            }
+        .navbar-collapse {
+            background-color: $amarilloClaro;
+                li {
+                    width: 100% !important;
+                }
+                }
+        .navbar-toggler-icon {
+            width: 100%;
+            height: 90%;
+            background-color: $amarilloClaro;
+            }
+        h1 {
+            margin: 2.5%;
+        }
+        .descripcion-pagina {
+            margin: 2.5%;
+        }
+        #menu-index-principal .menu-index button{
+            width: 150%;
+            }
+        #seccion-servicios .servicios {
+            margin-bottom: 5%;
+        }
+        .menu-contacto .opciones-contacto {
+            width: 80%
+            }
+            p {
+                display: none;
+            }
+        .grid-navbar {
+            display: none;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat (9, 1fr);
+            grid-template-areas:
+            "entradas"
+            "tematica "
+            "calendario"
+            "links"
+            "articulo"
+            "publicidad"
+            "entrada2103"
+            "publicidad1"
+            "entrada1403"
+            ;
+            row-gap: 1%;
+            margin-bottom: 50%;
+            button {
+                width: 100%;
+                padding: 1rem;
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 2.5rem;
+                background-color:$amarilloOscuro;
+                color:$azulClaro;
+            &:hover {
+                background-color:$azulClaro;
+                color:$amarilloOscuro;
+                    }
+                }
+                ul {
+                    background-color: $amarilloClaro;
+                    width: 100%;
+                    font-family: "Bebas Neue", sans-serif;
+                    font-size: 2.5rem;
+                    background-color:$amarilloOscuro;
+                    color:$azulClaro;
+                    li {
+                        text-align: center;
+                    }
+                        a {
+                            text-decoration: none;
+                            color:$azulClaro
+                        }
+                    }
+            }
+        footer .derechos-propiedad {
+            text-align: center;
+                }
+            }
     @media (min-width: 1024px) {
         h1 {
             margin: 3%;

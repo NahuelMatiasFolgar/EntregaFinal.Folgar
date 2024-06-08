@@ -695,6 +695,83 @@ html footer .iconos-rrss div svg {
     display: none;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  html .navbar-toggler {
+    background-color: #0D0159;
+    width: 7rem;
+    height: 7rem;
+  }
+  html .navbar-collapse {
+    background-color: #F2E30F;
+  }
+  html .navbar-collapse li {
+    width: 100% !important;
+  }
+  html .navbar-toggler-icon {
+    width: 100%;
+    height: 90%;
+    background-color: #F2E30F;
+  }
+  html h1 {
+    margin: 2.5%;
+  }
+  html .descripcion-pagina {
+    margin: 2.5%;
+  }
+  html #menu-index-principal .menu-index button {
+    width: 150%;
+  }
+  html #seccion-servicios .servicios {
+    margin-bottom: 5%;
+  }
+  html .menu-contacto .opciones-contacto {
+    width: 80%;
+  }
+  html p {
+    display: none;
+  }
+  html .grid-navbar, html .grid-entradas-tematica, html .grid-calendario, html .grid-links {
+    display: none;
+  }
+  html .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat 9, 1fr;
+    grid-template-areas: "entradas" "tematica " "calendario" "links" "articulo" "publicidad" "entrada2103" "publicidad1" "entrada1403";
+    row-gap: 1%;
+    margin-bottom: 50%;
+  }
+  html .grid-container button {
+    width: 100%;
+    padding: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    background-color: #F2CB05;
+    color: #0D0159;
+  }
+  html .grid-container button:hover {
+    background-color: #0D0159;
+    color: #F2CB05;
+  }
+  html .grid-container ul {
+    background-color: #F2E30F;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    background-color: #F2CB05;
+    color: #0D0159;
+  }
+  html .grid-container ul li {
+    text-align: center;
+  }
+  html .grid-container ul a {
+    text-decoration: none;
+    color: #0D0159;
+  }
+  html footer .derechos-propiedad {
+    text-align: center;
+  }
+}
 @media (min-width: 1024px) {
   html h1 {
     margin: 3%;
